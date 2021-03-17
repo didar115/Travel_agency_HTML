@@ -1,0 +1,380 @@
+
+<html>
+<head>
+	<title>BD-Traveller</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewpoint" content="width-device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<style>
+
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 0px 0;
+    position: center;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+
+}
+
+
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</style>
+<body>
+
+
+
+
+<section class="header">
+	
+<div class="container">
+	<img src="image/travel_logo_1.png" style="float: left;">
+	
+
+<button class="login-btn" onclick="document.getElementById('modal-wrapper').style.display='block'">
+login</button>
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="image/1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center; color:black; padding-top: 50px;">User Login Form</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+</div>
+
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<h1>TRAVEL WITH NO REGRETS</h1>
+<p>Cover The Earth Before It Covers You</p>
+<div class="input-group">
+	<input type="text" class="form-control" placeholder="search country or city">
+	<div class="input-group-append">
+		<button type="button" class="input-group-text btn">Search</button>
+	</div> 
+</section>
+
+
+<section class="features">
+	<h1>Featured Destination</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_1.jpg">
+					<div class="price">
+						<p>500$ </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Sundarban</h4>
+							<p>The Sundarbans is a mangrove area in the delta formed by the confluence of Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal.</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Hatirjheel</span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_2.jpg">
+					<div class="price">
+						<p>500$ </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Ahsan Manzil</h4>
+							<p>Ahsan Manzil was the official residential palace and seat of the Nawab of Dhaka. The building is situated at Kumartoli along the banks of the Buriganga River in Dhaka</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Ahsan Manzil</span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="image/img_3.jpg">
+					<div class="price">
+						<p>500$ </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Sylhet Tea Garden</h4>
+							<p>Bangladesh is an important tea-producing country. It is the 10th largest tea producer in the world.  East India Company initiated the tea trade in the hills of the Sylhet.</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Hatirjheel</span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+</div>
+</div>
+				
+
+</section>
+<section class="gallery">
+	<h1>Travelling  Gallery</h1>
+	<div class="container">
+		<div class="row">
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_4.jpg">
+				<h4>Dhaka</h4>
+				</div>
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_4.jpg">
+				<h4>SYLHET</h4>
+				</div>
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_4.jpg">
+				<h4>SYLHET</h4>
+				</div>
+			</div>
+			<div class="row-md-3">
+				<div class="gallery-box">
+				<img src="image/img_4.jpg">
+				<h4>SYLHET</h4>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+		
+	</div>
+	
+</section>
+<section class="banner">
+	<div class="banner-highlights">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2> Get 25% on top destination</h2>
+					<p>Book your tickets brfore December Month with this discount</p>
+				</div>
+				<div class="col-md-4">
+				<button type="button" class="booking-btn">Book Now</button>
+				
+			</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</section>
+<section class="users-feedback">
+	<h1>User Review</h1>
+	<div class="container" >
+	<div class="row">
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Lokman Hossain</h5>
+				<small>Sylhet</small>
+				
+			</div>
+			<img src="image/user.jpg">
+			
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Sebabrata Podder Sirdarth</h5>
+				<small>Sylhet</small>
+				
+			</div>
+			<img src="image/user_2.jpg">
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Maharaz Hasan Tamim</h5>
+				<small>Dhaka</small>
+				
+			</div>
+			<img src="image/user_3.jpg">
+		</div>
+	</div>	
+	</div>
+	
+</section>
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="image/travel_logo_1.png" class="footer-logo">
+				<p>We provide high class service to our customer.</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Features</h4>
+				<p>Deals & Offers</p>
+				<p>Customer Reviews</p>
+				<p>cancelation policy</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Contact</h4>
+				<p> <i class="fa fa-phone-square"></i>+22 7500866</p>
+				<p> <i class="fa fa-envelope"></i>oasis@gmail.com</p>
+				<p> <i class="fa fa-home"></i>Uttra,Dhaka.</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Follow Us on</h4>
+				<p> <i class="fa fa-facebook-official"></i>Facebook</p>
+				<p> <i class="fa fa-youtube-play"></i>Youtube</p>
+				<p> <i class="fa fa-twitter"></i>Twitter</p>
+			</div>
+			
+		</div><hr>
+	</div>
+</section>
+</body>
+</html>
